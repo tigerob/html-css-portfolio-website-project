@@ -3,11 +3,24 @@ body {
     margin: 0;
     box-sizing: border-box;
     width: 100vw;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgba(133, 49, 0, 0.60);
+    background-image: linear-gradient(rgba(133, 49, 0, 0.20), rgba(133, 49, 0, 0.60), rgba(133, 49, 0, 0.20));
+    font-size: 0.7em;
 }
+
+a:link, a:visited {
+    color: black;
+    text-decoration: none;
+  }
+  
+  a:hover, a:active {
+    color: white;
+  }
 
 #top-bar {
     width: 100%;
-    height:5rem;
+    height:5vh;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
@@ -21,30 +34,49 @@ body {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-}
-
-.external-links {
-    display: flex;
+    
 }
 
 .icon-image {
     height: 2rem;
 }
 
-#hello-text {
-    height: 80vh;
+#website-logo {
+    border-radius: 50px;
+}
+
+#landing-greeting {
+    height: 90vh;
+    padding: 0vh 3vh 0vh;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    font-size: 1rem;
 }
 
 footer {
+    height: 5vh;
+    column-gap: 5rem;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-    column-gap: 5rem;
+    font-size: 0.7em;
 }
 
-@media only screen and (min-width: 560px) {
+@media only screen and (min-width: 580px) {
+    body {
+        font-size: 1em;
+    };
+    
     .website-nav-container, .external-links-container {
         column-gap: 2rem;
+    }
+    #landing-greeting {
+        font-size: 1.5em;
     }
 }
 

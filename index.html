@@ -8,29 +8,33 @@
     <title>Tiger O'Brien | Portfolio | Home</title>
     <link rel="stylesheet" href="style.css" type="text/css">
     <link rel="shortcut icon" href="./../images/website-logo.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <nav id="top-bar"> <!-- Bar across top of website for internal navigation and links to LinkedIn and GitHub -->
         <div class="website-nav-container"> <!-- ADD HREFS TO RESPECTIVE .HTML PAGES -->
-            <a href="./index.html"><img class="icon-image" src="./../images/website-logo.png" alt="logo"></a>
+            <a href="./index.html"><img class="icon-image" id="website-logo" src="./../images/website-logo.png" alt="logo"></a>
             <a href="./index.html">Home</a>
             <a href="./about.html">About</a>
-            <a>Projects</a>
-            <a>Blog</a>
-            <a>Contact</a>
+            <a href="./projects.html">Projects</a>
+            <a href="./blog.html">Blog</a>
+            <a href="./contact.html">Contact</a>
         </div>
         <div class="external-links-container">
             <a href="https://www.linkedin.com/in/tiger-obrien/" target="_blank"><img class="icon-image" src="./../images/linkedin.png" alt="LinkedIn"></a> 
             <a href="https://github.com/tigerob" target="_blank"><img class="icon-image" src="./../images/github.png" alt="GitHub"></a>
         </div>
     </nav>
-    <main> <!-- Landing page displaying introduction to website -->
-        <p id="hello-text">Hello, world. My name is Tiger O'Brien and I am a web developer in training. This is my portfolio. Please feel welcome to look around.</p>
+    <main id="landing-greeting"> <!-- Landing page displaying introduction to website -->
+        <p>Hello, world.</p>
+        <p> My name is Tiger O'Brien. I'm a Melbourne-based web developer in training and this is my portfolio.</p>
+        <p>Feel welcome to have a look around.</p>
     </main>
     <footer>
         <span>&copy 2021 Tiger O'Brien</span>
-        <a href=#top-bar>Return to top of page</a>
     </footer>
 </body>
 
