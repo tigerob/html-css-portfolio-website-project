@@ -4,8 +4,7 @@ body {
     box-sizing: border-box;
     width: 100vw;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-color: rgba(133, 49, 0, 0.60);
-    background-image: linear-gradient(rgba(133, 49, 0, 0.20), rgba(133, 49, 0, 0.60), rgba(133, 49, 0, 0.20));
+    background-color: rgba(170, 99, 57, 0.70);
     font-size: 0.7em;
 }
 
@@ -33,8 +32,11 @@ a:link, a:visited {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
-    
+    align-items: center;   
+}
+
+#home-button, #about-button, #projects-button, #blog-button, #contact-button {
+    color: white;
 }
 
 .icon-image {
@@ -84,4 +86,9 @@ footer {
     .external-links-container {
         display: none;
     }
+}
+
+#home-body {
+    background-color: rgba(133, 49, 0, 0.60);
+    background-image: linear-gradient(rgba(170, 99, 57, 0.05), rgba(137, 80, 46, 1), rgba(170, 99, 57, 0.05));
 }
