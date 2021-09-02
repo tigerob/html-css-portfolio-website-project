@@ -1,8 +1,10 @@
+/* Website-wide */
+
 body {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    width: 100vw;
+    width: calc(100vw - (100vw - 100%));
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-color: rgba(170, 99, 57, 0.70);
     font-size: 0.7em;
@@ -17,8 +19,12 @@ a:link, a:visited {
     color: white;
   }
 
+  .spacer {
+    height: 5rem;
+}
+
 #top-bar {
-    width: 100%;
+    width: calc(100vw - (100vw - 100%));
     height:5vh;
     display: flex;
     flex-flow: row wrap;
@@ -47,6 +53,23 @@ a:link, a:visited {
     border-radius: 50px;
 }
 
+footer {
+    height: 5vh;
+    column-gap: 5rem;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    font-size: 0.7em;
+}
+
+
+/* Home page */
+
+#home-body {
+    background-color: rgba(133, 49, 0, 0.60);
+    background-image: linear-gradient(rgba(170, 99, 57, 0.05), rgba(137, 80, 46, 1), rgba(170, 99, 57, 0.05));
+}
+
 #landing-greeting {
     height: 90vh;
     padding: 0% 10% 0%;
@@ -60,20 +83,16 @@ a:link, a:visited {
     font-size: 1rem;
 }
 
-footer {
-    height: 5vh;
-    column-gap: 5rem;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    font-size: 0.7em;
-}
+
+/* About page */
 
 #about-content {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
+    padding: 0rem 2rem;
+    text-align: justify;
 }
 
 #professional-photo {
@@ -82,14 +101,18 @@ footer {
     padding: 2rem 0rem;
 }
 
-#about-content p {
-    padding: 0rem 2rem;
-    text-align: justify;
+
+/* Projects page */
+
+.projects-and-blog-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
 }
 
-.spacer {
-    height: 5rem;
-}
+
+/* @media changes */
 
 @media only screen and (min-width: 580px) {
     body {
@@ -122,9 +145,4 @@ footer {
     #top-bar {
         justify-content: center;
     }
-}
-
-#home-body {
-    background-color: rgba(133, 49, 0, 0.60);
-    background-image: linear-gradient(rgba(170, 99, 57, 0.05), rgba(137, 80, 46, 1), rgba(170, 99, 57, 0.05));
 }
