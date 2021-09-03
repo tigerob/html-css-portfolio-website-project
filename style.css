@@ -18,6 +18,13 @@ h1 {
     padding: 0rem 2rem 1rem;
 }
 
+h2 {
+    font-size: 1em;
+    font-weight: normal;
+    font-style: italic;
+    padding: 0rem 2rem 1rem;
+}
+
 p {
     padding: 0rem 2rem 1rem;
 }
@@ -164,6 +171,50 @@ footer {
 }
 
 
+/* CONTACT PAGE */
+
+.contact-content {
+    width: 80%;
+}
+
+#contact-paragraph {
+    
+}
+
+#contact-form {
+    border-style: none;
+    background-color: whitesmoke;
+    /* border-color: whitesmoke; */
+}
+
+.hpot {
+    display: none;
+}
+
+#fs-frm, #fs-frm-inputs {
+    display: flex;
+    flex-direction: column;
+    border-style: none;
+}
+
+#submit {
+    width: 6rem;
+    border-style: none;
+}
+
+.form-padding {
+    padding: 1.3rem 1rem;
+}
+
+/* input[type=text]:focus, input[type=email]:focus {
+    outline: 2px solid red;
+} */
+
+input:focus {
+    outline: 2px solid red;
+}
+
+
 /* @MEDIA CHANGES FOR TABLET AND DESKTOP */
 
 @media only screen and (min-width: 550px) {
@@ -171,6 +222,9 @@ footer {
 /* Website-wide */
     body {
         font-size: 0.9em;
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
     }
 
     p {
@@ -202,19 +256,19 @@ footer {
         margin-bottom: 2rem;
         opacity: 0.8;
     }
+
+/* Contact page */
+    .contact-content {
+        width: 50%;
+        max-width: 40rem;
+    }
+
 }
 
 
 @media only screen and (min-width: 960px) {
 
 /* About page */
-
-body {
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: center;
-}
-
 #about-content {
     width: 80%;
     max-width: 60rem;

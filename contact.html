@@ -28,10 +28,28 @@
             <a href="https://github.com/tigerob" target="_blank"><img class="icon-image" src="./images/github.png" alt="GitHub logo"></a>
         </div>
     </nav>
-    <main> <!-- Contact form and links -->
-        <p>[Contact form]</p>
-        <p>[Links]</p>
-        </main>
+    <main class="contact-content"> <!-- Contact form and external links -->
+        <section id="contact-paragraph">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum, corrupti saepe! Modi veniam ipsa distinctio officia ratione voluptatem consequatur incidunt sit blanditiis dolore, aperiam quo pariatur velit eveniet enim sunt.</p>
+        </section>
+        <section id="contact-form">
+            <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/cobxyz@gmail.com" method="post">
+                <div class="hpot">
+                    <label>Leave this field empty: <input name="_gotcha"></label>
+                </div>    
+                <fieldset id="fs-frm-inputs">
+                  <label class="form-padding" for="full-name">Full Name</label>
+                  <input class="form-padding" type="text" name="name" id="full-name" placeholder="First and Last" required="">
+                  <label class="form-padding" for="email-address">Email Address</label>
+                  <input class="form-padding" type="email" name="_replyto" id="email-address" placeholder="email@domain.tld" required="">
+                  <label class="form-padding" for="message">Message</label>
+                  <textarea class="form-padding" rows="5" name="message" id="message" placeholder="Aenean lacinia bibendum nulla sed consectetur. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec ullamcorper nulla non metus auctor fringilla nullam quis risus." required=""></textarea>
+                  <input class="form-padding" type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+                </fieldset>
+                <input id="submit" class="form-padding" type="submit" value="Submit">
+              </form>
+        </section>    
+    </main>
     <footer>
         <span>&copy 2021 Tiger O'Brien</span>   <!-- footer dispaying copyright information and providing 'return to top of page' button -->
         <a href=#top-bar>Return to top of page</a>
