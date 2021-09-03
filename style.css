@@ -174,14 +174,21 @@ footer {
 /* CONTACT PAGE */
 
 .contact-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 80%;
 }
 
 #contact-paragraph {
-    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 0rem;
 }
 
 #contact-form {
+    width: 100%;
     border-style: none;
     background-color: whitesmoke;
     /* border-color: whitesmoke; */
@@ -220,48 +227,56 @@ input:focus {
 @media only screen and (min-width: 550px) {
 
 /* Website-wide */
-    body {
-        font-size: 0.9em;
-        display: flex;
-        flex-flow: column nowrap;
-        align-items: center;
-    }
+body {
+    font-size: 0.9em;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
 
-    p {
-        max-width: 60rem;
-    }
+p {
+    max-width: 60rem;
+}
 
-    #top-bar {
-        justify-content: space-between;
-    }
+#top-bar {
+    justify-content: space-between;
+}
 
-    .website-nav-container, .external-links-container {
-        column-gap: 2rem;
-    }
+.website-nav-container, .external-links-container {
+    column-gap: 2rem;
+}
 
-    .external-links-container {
-        display: unset;
-    }
+.external-links-container {
+    display: unset;
+}
 
 /* Home page */
-    #landing-greeting {
-        font-size: 1.2em;
-    }
+#landing-greeting {
+    font-size: 1.2em;
+}
+
+
+#professional-photo-container
+{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
 
 /* Projects and Blog pages */
-    .project-and-blog-photo {
-        width: 40%;
-        max-width: 30rem;
-        height: auto;
-        margin-bottom: 2rem;
-        opacity: 0.8;
-    }
+.project-and-blog-photo {
+    width: 40%;
+    max-width: 30rem;
+    height: auto;
+    margin-bottom: 2rem;
+    opacity: 0.8;
+}
 
 /* Contact page */
-    .contact-content {
-        width: 50%;
-        max-width: 40rem;
-    }
+.contact-content {
+    width: 80%;
+    max-width: 40rem;
+}
 
 }
 
@@ -281,6 +296,10 @@ input:focus {
     align-items: flex-start;
     padding: 2rem 0rem;
     width: 100%;
+}
+
+#professional-photo-container {
+    max-width: 20rem;
 }
 
 #professional-photo {
