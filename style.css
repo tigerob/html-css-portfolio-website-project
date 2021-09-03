@@ -36,7 +36,7 @@ a:hover, a:active {
     height:5vh;
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 }
 
@@ -47,6 +47,10 @@ a:hover, a:active {
     flex-direction: row;
     justify-content: center;
     align-items: center;   
+}
+
+.external-links-container {
+    display: none;
 }
 
 #home-button, #about-button, #projects-button, #blog-button, #contact-button {
@@ -100,14 +104,31 @@ footer {
     justify-content: flex-start;
     align-items: center;
     text-align: justify;
+    padding: 2rem 0rem;
+}
+
+#about-photo-and-text-container {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
     padding-bottom: 2rem;
 }
 
-#professional-photo {
-    max-width: 80%;
-    height: auto;
-    padding: 2rem 0rem;
+.about-text-container-type-a {
+    padding-bottom: 1rem;
 }
+
+.about-text-container-type-b {
+    padding-bottom: 1rem;
+}
+
+#professional-photo {
+    width: 100%;
+    max-width: 40rem;
+    height: auto;
+    padding: 0% 10%;
+}
+
 
 
 /* PROJECTS PAGE */
@@ -118,7 +139,7 @@ footer {
     justify-content: flex-start;
     align-items: center;
     padding-top: 2rem;
-    max-width: 60rem;
+    text-align: justify;
 }
 
 .project-and-blog-container {
@@ -126,52 +147,95 @@ footer {
     flex-flow: row wrap;
     justify-content: center;
     align-items: flex-start;
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
 }
 
 .project-and-blog-photo {
-    min-width: 20rem;
-    max-width: 50%;
+    width: 80%;
+    max-width: 30rem;
     height: auto;
-    padding: 0rem 2rem 2rem;
+    margin-bottom: 2rem;
     opacity: 0.8;
 }
 
-.projects-and-blog-content p {
+.heading-and-text-container {
     max-width: 30rem;
+    padding-bottom: 2rem;
 }
 
-/* @MEDIA CHANGES */
 
-@media only screen and (min-width: 580px) {
+/* @MEDIA CHANGES FOR TABLET AND DESKTOP */
+
+@media only screen and (min-width: 550px) {
+
+/* Website-wide */
     body {
-        font-size: 1em;
+        font-size: 0.9em;
     }
 
     p {
         max-width: 60rem;
     }
 
+    #top-bar {
+        justify-content: space-between;
+    }
+
     .website-nav-container, .external-links-container {
         column-gap: 2rem;
     }
+
+    .external-links-container {
+        display: unset;
+    }
+
+/* Home page */
     #landing-greeting {
         font-size: 1.2em;
     }
 
-    #professional-photo {
-        max-width: 50%;
+/* Projects and Blog pages */
+    .project-and-blog-photo {
+        width: 40%;
+        max-width: 30rem;
         height: auto;
-        padding-top: 3rem;
+        margin-bottom: 2rem;
+        opacity: 0.8;
     }
 }
 
-@media only screen and (max-width: 460px) {
-    .external-links-container {
-        display: none;
-    }
 
-    #top-bar {
-        justify-content: center;
-    }
+@media only screen and (min-width: 960px) {
+
+/* About page */
+
+body {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+#about-content {
+    width: 80%;
+    max-width: 60rem;
+}
+
+#about-photo-and-text-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 2rem 0rem;
+    width: 100%;
+}
+
+#professional-photo {
+    max-width: 20rem;
+    height: auto;
+    padding: 0%;
+}
+
+.about-text-container-type-b {
+    width: 100%
+}   
 }
