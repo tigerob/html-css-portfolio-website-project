@@ -14,30 +14,30 @@
 </head>
 
 <body>
-    <nav id="top-bar"> <!-- Bar across top of website providing internal navigation and links to LinkedIn and GitHub -->
-        <div class="website-nav-container">
+    <nav id="top-bar"> <!-- Bar across top of website providing internal navigation and links to LinkedIn, GitHub and Stack Overflow -->
+        <section class="website-nav-container"> <!-- internal-navigation buttons -->
             <a href="./index.html"><img class="icon-image" id="website-logo" src="./images/website-logo.png" alt="website logo"></a>
             <a href="./index.html">Home</a>
             <a href="./about.html">About</a>
             <a href="./projects.html">Projects</a>
             <a href="./blog.html">Blog</a>
             <a id="highlighted-button" href="./contact.html">Contact</a>
-        </div>
-        <div class="external-links-container">
+        </section>
+        <section class="external-links-container"> <!-- external links to LinkedIn, GitHub and Stack Overflow -->
             <a href="https://www.linkedin.com/in/tiger-obrien/" target="_blank"><img class="icon-image" src="./images/linkedin.png" alt="LinkedIn logo"></a> 
             <a href="https://github.com/tigerob" target="_blank"><img class="icon-image" src="./images/github.png" alt="GitHub logo"></a>
             <a href="https://stackoverflow.com/users/16664923/tiger" target="_blank"><img class="icon-image" src="./images/stack-overflow.png" alt="Stack Overflow logo"></a>
-        </div>
+        </section>
     </nav>
-    <main class="contact-content"> <!-- Contact form and external links -->
+    <main class="contact-content"> <!-- Text containing links to LinkedIn, GitHub and Stack Overflow personal pages; contact form -->
         <section id="contact-paragraph">
             <p>You can find me at <a class="bold" href="https://www.linkedin.com/in/tiger-obrien/" target="_blank">LinkedIn</a>, <a class="bold" href="https://github.com/tigerob" target="_blank">GitHub</a> or <a class="bold" href="https://stackoverflow.com/users/16664923/tiger" target="_blank">Stack Overflow</a>. You can also reach me via the contact form below.</p>
         </section>
         <section id="contact-form">
             <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/xoqyynje" method="post">
-                <div class="hpot">
+                <section class="hpot">
                     <label>Leave this field empty: <input name="_gotcha"></label>
-                </div>    
+                </section>
                 <fieldset id="fs-frm-inputs">
                   <label class="form-padding" for="full-name">Full Name</label>
                   <input class="form-padding" type="text" name="name" id="full-name" placeholder="First and Last" required="">
