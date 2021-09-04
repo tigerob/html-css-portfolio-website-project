@@ -194,7 +194,7 @@ footer {
 #contact-form {
     width: 100%;
     border-style: none;
-    background-color: whitesmoke;
+    background-color: #DEDEDE;
 }
 
 .hpot {
@@ -206,7 +206,6 @@ footer {
     flex-direction: column;
     border-style: none;
     font-family: 'Open Sans', sans-serif;
-    font-style: italic;
 }
 
 #submit {
