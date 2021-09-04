@@ -73,7 +73,7 @@ a:hover, a:active {
 }
 
 .icon-image {
-    height: 2rem;
+    height: 1.5em;
 }
 
 #website-logo {
@@ -129,11 +129,12 @@ footer { /* footer dispaying copyright information and providing 'return to top 
     padding-bottom: 2rem;
 }
 
-.about-text-container-type-a {
+.about-text-with-photo-container {
     padding-bottom: 1rem;
 }
 
-.about-text-container-type-b {
+.about-text-container {
+    width: 100%;
     padding-bottom: 1rem;
 }
 
@@ -142,6 +143,22 @@ footer { /* footer dispaying copyright information and providing 'return to top 
     max-width: 40rem;
     height: auto;
     padding: 0% 10%;
+}
+
+.skills-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.skills-item {
+    display: flex;
+    flex-direction: row;
+    padding: 0rem 4rem 0rem 2rem;
+}
+
+.skills-item .icon-image {
+    height: 1.2em;
 }
 
 
@@ -263,7 +280,7 @@ input:focus, textarea:focus {
 
 /* ---------- @MEDIA CHANGES FOR TABLET AND DESKTOP ---------- */
 
-@media only screen and (min-width: 561px) {
+@media only screen and (min-width: 530px) {
 
 /* WEBSITE-WIDE */
 
@@ -288,7 +305,7 @@ p {
 }
 
 
-/* HOME-PAGE */
+/* HOME PAGE */
 
 #landing-greeting {
     font-size: 1.2em;
@@ -301,6 +318,12 @@ p {
     justify-content: center;
 }
 
+/* ABOUT PAGE */
+
+.skills-container {
+    display: flex;
+    flex-flow: row wrap;
+}
 
 /* PROJECTS AND BLOG PAGES */
 
@@ -343,7 +366,7 @@ p {
     max-width: 30rem;
 }
 
-.about-text-container-type-b {
+.about-text-container {
     width: 100%
 }   
 
