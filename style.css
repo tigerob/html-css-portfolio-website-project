@@ -32,6 +32,10 @@ p {
     padding: 0rem 2rem 1rem;
 }
 
+.bold   {
+    font-weight: bold;
+}
+
 a:link, a:visited {
     color: black;
     text-decoration: none;
@@ -250,10 +254,6 @@ input:focus, textarea:focus {
     width: 100%;
 }
 
-.bold   {
-    font-weight: bold;
-}
-
 .italic {
     font-style: italic;
     font-weight: normal;
@@ -262,7 +262,7 @@ input:focus, textarea:focus {
 
 /* ---------- @MEDIA CHANGES FOR TABLET AND DESKTOP ---------- */
 
-@media only screen and (min-width: 550px) {
+@media only screen and (min-width: 561px) {
 
 /* WEBSITE-WIDE */
 
