@@ -10,7 +10,7 @@ body {
     width: calc(100vw - (100vw - 100%));
     font-family: 'Open Sans', sans-serif;
     background-color: rgba(170, 99, 57, 0.70);
-    font-size: 1em;
+    font-size: 0.9em;
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
@@ -63,7 +63,7 @@ a:hover, a:active {
     display: none;
 }
 
-#home-button, #about-button, #projects-button, #blog-button, #contact-button {
+#highlighted-button {
     color: white;
 }
 
@@ -102,7 +102,7 @@ footer {
     text-align: center;
     /* font-family: 'Open Sans', sans-serif; */
     color: white;
-    font-size: 1rem;
+    font-size: 1em;
 }
 
 
@@ -140,8 +140,7 @@ footer {
 }
 
 
-
-/* PROJECTS PAGE */
+/* PROJECTS AND BLOG PAGES */
 
 .projects-and-blog-content {
     display: flex;
@@ -161,7 +160,7 @@ footer {
 }
 
 .project-and-blog-photo {
-    width: 80%;
+    width: 40%;
     max-width: 30rem;
     height: auto;
     margin-bottom: 2rem;
@@ -179,6 +178,7 @@ footer {
 .contact-content {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     width: 80%;
     height: 90vh;
@@ -189,6 +189,10 @@ footer {
     flex-direction: column;
     align-items: center;
     padding: 2rem 0rem;
+}
+
+#contact-paragraph p {
+    padding: 0rem;
 }
 
 #contact-form {
@@ -229,13 +233,41 @@ input:focus, textarea:focus {
 }
 
 
-/* @MEDIA CHANGES FOR TABLET AND DESKTOP */
+/* INDIVIDUAL BLOG POST PAGES */
+
+.blog-post-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    text-align: justify;
+    padding: 3rem 0rem;
+}
+
+.abstract {
+    padding: 2rem 2rem 3rem;
+    width: 100%;
+}
+
+.bold   {
+    font-weight: bold;
+}
+
+.italic {
+    font-style: italic;
+    font-weight: normal;
+}
+
+
+/* ---------- @MEDIA CHANGES FOR TABLET AND DESKTOP ---------- */
 
 @media only screen and (min-width: 550px) {
 
-/* Website-wide */
+/* WEBSITE-WIDE */
+
 body {
-    font-size: 0.9em;
+    font-size: 1em;
 }
 
 p {
@@ -254,11 +286,12 @@ p {
     display: unset;
 }
 
-/* Home page */
+
+/* HOME-PAGE */
+
 #landing-greeting {
     font-size: 1.2em;
 }
-
 
 #professional-photo-container
 {
@@ -267,7 +300,9 @@ p {
     justify-content: center;
 }
 
-/* Projects and Blog pages */
+
+/* PROJECTS AND BLOG PAGES */
+
 .project-and-blog-photo {
     width: 40%;
     max-width: 30rem;
@@ -276,18 +311,19 @@ p {
     opacity: 0.8;
 }
 
-/* Contact page */
+
+/* CONTACT PAGE */
+
 .contact-content {
     width: 80%;
     max-width: 40rem;
 }
-
 }
 
 
 @media only screen and (min-width: 960px) {
 
-/* About page */
+/* ABOUT PAGE */
 #about-content {
     width: 80%;
     max-width: 60rem;
@@ -303,16 +339,17 @@ p {
 }
 
 #professional-photo-container {
-    max-width: 20rem;
-}
-
-#professional-photo {
-    max-width: 20rem;
-    height: auto;
-    padding: 0%;
+    max-width: 30rem;
 }
 
 .about-text-container-type-b {
     width: 100%
 }   
+
+
+/* INDIVIDUAL BLOG POST PAGES */
+
+.blog-post-content {
+    max-width: 50rem;
+}
 }
