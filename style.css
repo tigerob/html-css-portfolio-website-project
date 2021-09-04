@@ -8,9 +8,12 @@
 
 body {
     width: calc(100vw - (100vw - 100%));
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     background-color: rgba(170, 99, 57, 0.70);
-    font-size: 0.7em;
+    font-size: 1em;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
 }
 
 h1 {
@@ -97,7 +100,7 @@ footer {
     justify-content: center;
     align-items: center;
     text-align: center;
-    font-family: 'Open Sans', sans-serif;
+    /* font-family: 'Open Sans', sans-serif; */
     color: white;
     font-size: 1rem;
 }
@@ -178,6 +181,7 @@ footer {
     flex-direction: column;
     align-items: center;
     width: 80%;
+    height: 90vh;
 }
 
 #contact-paragraph {
@@ -191,7 +195,6 @@ footer {
     width: 100%;
     border-style: none;
     background-color: whitesmoke;
-    /* border-color: whitesmoke; */
 }
 
 .hpot {
@@ -202,6 +205,8 @@ footer {
     display: flex;
     flex-direction: column;
     border-style: none;
+    font-family: 'Open Sans', sans-serif;
+    font-style: italic;
 }
 
 #submit {
@@ -210,15 +215,18 @@ footer {
 }
 
 .form-padding {
-    padding: 1.3rem 1rem;
+    padding: 0.5rem 0.5rem;
 }
 
-/* input[type=text]:focus, input[type=email]:focus {
-    outline: 2px solid red;
-} */
+input, textarea {
+    border: none;
+    font-family: 'Open Sans', sans-serif;
+}
 
-input:focus {
-    outline: 2px solid red;
+input:focus, textarea:focus {
+    border: none;
+    outline: 1px solid silver;
+    box-shadow: 0 0 10px silver;
 }
 
 
@@ -229,9 +237,6 @@ input:focus {
 /* Website-wide */
 body {
     font-size: 0.9em;
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: center;
 }
 
 p {
