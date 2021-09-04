@@ -74,6 +74,7 @@ a:hover, a:active {
 
 .icon-image {
     height: 1.5em;
+    width: auto;
 }
 
 #website-logo {
