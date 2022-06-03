@@ -2,7 +2,7 @@
 
 ## Deployed website
 
-tiger-obrien.netlify.app/
+https://tiger-obrien.netlify.app/
 
 ## GitHub repository
 
